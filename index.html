@@ -462,5 +462,13 @@
     updateCounter();
     setInterval(updateCounter, 1000);
   </script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById("background-music");
+    audio.play().catch(error => {
+        console.log("Autoplay engellendi, kullanıcı etkileşimi bekleniyor.", error);
+    });
+});
+</script>
 </body>
 </html>
